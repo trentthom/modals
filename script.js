@@ -23,3 +23,36 @@ for(let i = 0; i < buttonsOpenModal.length; i++)
 //listners to close modals
 buttonCloseModal.addEventListener('click',closeModal)
 overlay.addEventListener('click', closeModal)
+
+//key press event
+
+document.addEventListener('keydown', function (e){
+  if(e.key === 'Escape' && !modal.classList.contains('hidden')){
+      closeModal()
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
